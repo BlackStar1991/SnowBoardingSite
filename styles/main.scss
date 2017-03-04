@@ -170,6 +170,9 @@ header {
     &__navigation {
       position: relative;
       float: left;
+      height: 108px; ///////////////
+
+
       //width: 60%;
       //border: $bd;
     }
@@ -263,7 +266,7 @@ header {
         width: 24px;
         margin-top: 4px;
 
-        background: url(../img/Mysocial.png) no-repeat 0 -167px;
+        background: url(../img/Mysocial.png) no-repeat 0 -176px;
       }
     }
   }
@@ -365,7 +368,8 @@ main {
   }
   .slide {
 
-    min-height: 649px;
+    //min-height: 649px;
+    height: 100%;
     width: 100%;
     outline: none;
     //cursor: pointer;
@@ -835,6 +839,11 @@ footer{
 ////////// FANCYBOX
 
 .blur {
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+}
+
+.fancybox-overlay {
   -webkit-filter: blur(50px);
   filter: blur(50px);
 }
