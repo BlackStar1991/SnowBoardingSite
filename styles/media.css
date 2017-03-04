@@ -31,6 +31,18 @@
 
 @media only screen and (max-width: 1199px) {
 
+
+    main .slide-text {
+        left: 7%;
+        top: 41%;
+        font-size: 60px;
+    }
+    main .slide-text.correctPosition1 {
+        top: 28%;
+        left: 7%;
+    }
+
+
     main .company-text{
         margin-left: 10px;
         font-size: 13px;
@@ -79,7 +91,7 @@
 
     header .box-mainHeader__navigation{
         height: 100%;
-        padding-bottom: 30px                  ////// NAVIG
+        padding-bottom: 30px              /*     NAVIG*/
     }
 
 
@@ -90,10 +102,6 @@
     header .box-navigation__items{
         display: none;              ///////////////
         width: 100%;
-
-
-        /*margin-left: 34px;*/
-        /*padding-top: 50%;*/
         margin-top: 45%;
 
     }
@@ -126,6 +134,25 @@
     }
 
 
+    main .slide-text {
+        left: 4%;
+        top: 30%;
+        font-size: 3.5em;
+    }
+    main .slide-text.correctPosition1 {
+        top: 20%;
+        left: 6%;
+    }
+
+
+    main .slide-button {
+        left: 10%;
+        bottom: 16.2%;
+    }
+    main .slide-button.correctPosition2 {
+        bottom: 22%;
+        left:11%;
+    }
 
 
     main .slick-prev{
@@ -175,9 +202,6 @@
 @media only screen and (max-width: 768px) {
 
 
-    header .box-logo{
-        /*width: 100%;*/
-    }
     header .box-navigation .navigation-button{
         /*top: -50px;*/
         /*left: 150px;*/
@@ -193,7 +217,7 @@
 
     }
     header .box-navigation__items .item a{
-        /*width: 100%;*/
+
     }
 
     header .box-mainHeader__tools{
@@ -205,8 +229,7 @@
     }
 
     header .search-button{
-        /*top: 14px;*/
-        /*left: 150px;*/
+
     }
 
     header .price a{
@@ -222,6 +245,19 @@
 
         /*border: 1px solid #f00;*/
     }
+
+    main .slide-text {
+        left: 1.5%;
+        top: 30%;
+        font-size: 3.5em;
+    }
+    main .slide-text.correctPosition1 {
+        top: 20%;
+        left: 5.3%;
+    }
+
+
+
 
 }
 
@@ -264,6 +300,29 @@
         margin-top: 0;
     }
 
+
+    main .slide-text {
+        left: 3%;
+        top: 55%;
+        font-size: 4.5em;
+    }
+    main .slide-text.correctPosition1 {
+        top: 55%;
+        left: 6%;
+    }
+
+    main .slide-button {
+        left: 10%;
+        bottom: 16.2%;
+        font-size: 2em;
+    }
+    main .slide-button.correctPosition2 {
+        bottom: 3%;
+        left:7%;
+    }
+
+
+
 }
 
 
@@ -276,7 +335,8 @@
 
 
     main .company-text{
-        font-size: 11px;
+        margin-left: 15px;
+        font-size: 12px;
     }
 
 
@@ -312,7 +372,8 @@
 
     main .company-text{
         margin-top: 20px;
-        font-size: 12px;
+        margin-left: 10px;
+        font-size: 1.3em;
     }
 
     main .wrappenBoardman.firstBoardMan {
@@ -323,8 +384,15 @@
         /*height: 70vw;*/
     }
 
+
+
+
     main .box-aboutCompany{
-        height: 145vw;
+        height: 700px;
+    }
+
+    main .box-gallery{
+        margin-top: 50px;
     }
 
 }
@@ -335,7 +403,11 @@
 
 
     main .box-aboutCompany{
-        height: 200vw;
+        height: 125vw;
+    }
+
+    main .box-gallery{
+        margin-top: 380px;
     }
 }
 

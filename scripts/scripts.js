@@ -1,45 +1,15 @@
-window.onload = function () {
+window.onload=function () {
 
-    // $(window).load(function(){
-    //     $('.slide-img').liCover({
-    //         parent: $(window),
-    //         position:'absolute',
-    //         veticalAlign:'middle',
-    //         align:'center'
-    //     })
+
+
+// $(document).ready(function() {
+
+    // $(window).load(function() {
+    //     $(".loader_inner").fadeOut();
+    //     $(".loader").delay(400).fadeOut("slow");
     // });
 
 
-    var boxSlider = $(".box-mainSlider");
-
-    boxSlider.slick({
-
-        // autoplay: true,
-
-        autoplay: false,
-        // draggable:false,
-
-        autoplaySpeed: 4500,
-        centerPadding: '0',
-        dots: true,
-        arrows: false,
-        pauseOnDotsHover: true,
-
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 320,
-                settings: {
-                    dots: false
-                }
-            }
-        ]
-    });
 
     var searchButton = $(".search-button");
     var searchBlock = $(".search_form");
@@ -67,6 +37,44 @@ window.onload = function () {
             searchBlock.slideDown();
         }
     });
+
+
+
+
+    /////////////////// FIRST SLIDER
+
+    var boxSlider = $(".box-mainSlider");
+
+    boxSlider.slick({
+
+        autoplay: true,
+
+        // autoplay: false,
+        // draggable:false,
+
+        autoplaySpeed: 4500,
+        centerPadding: '0',
+        dots: true,
+        arrows: false,
+        pauseOnDotsHover: true,
+
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
+    });
+
+
 
     ///////// Slider SNOWBOARDS
 
@@ -118,9 +126,38 @@ window.onload = function () {
     });
 
 
+    function fff() {
+        if('fancybox' in jQuery){
+            alert("HAVE");
+        }else{
+            alert("Don't have");
+        }
+    }fff();
 
+    $(".fancyImg").click(function () {
+       alert("click");
+    });
 
-    // $("[data-fancybox]").fancybox({
+    $(document).ready(function() {
+        $("a.fancyImg").fancybox({
+            helpers: {
+                overlay: false
+            },
+            afterShow: function () {
+                $('.box-gallery__container').css({
+                    webkitFilter: 'blur(13px)',
+                    filter: 'blur(13px)'
+                })
+            },
+            afterClose: function () {
+                $('.box-gallery__container').css({
+                    webkitFilter: 'blur(0)',
+                    filter: 'blur(0)'
+                })
+            }
+        });
+    });
+    // $(".fancybox").fancybox({
     //     beforeShow: function () {
     //         $("body *:not(.fancybox-overlay, .fancybox-overlay *)").addClass("blur");
     //     },
@@ -129,30 +166,14 @@ window.onload = function () {
     //     },
     //     helpers : {
     //         overlay: {
-    //             opacity: 0.8,
-    //             css: {'background-color': '#ff0000'}
+    //             css: {'background': 'rgba(255,255,255,0.1)'} // цвет, можешь убрать можешь написать любой
     //         }
     //     }
     // });
 
-    $("a.fancyImg").fancybox({
-        "controls":true,
-        "padding" : 20,
-        "imageScale" : false,
-        "zoomOpacity" : false,
-        "zoomSpeedIn" : 1000,
-        "zoomSpeedOut" : 1000,
-        "zoomSpeedChange" : 1000,
-        "frameWidth" : 700,
-        "frameHeight" : 600,
-        "overlayShow" : true,
-        "overlayOpacity" : 0.8,
-        "hideOnContentClick" :false,
-        "centerOnScroll" : false,
-        'speedIn': 600,
-        'speedOut': 200
 
-    });
+
+
 
 
 };

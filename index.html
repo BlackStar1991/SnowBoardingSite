@@ -12,26 +12,34 @@
 
     <link rel="stylesheet" href="libs/bootstrap-grid-3.3.2.min.css">
 
-    <link rel="stylesheet" href="styles/main.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="libs/licover/liCover.css">
 
-
     <!--<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">
+
 
 
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/media.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
+
     <title>SnowboardsShop</title>
 </head>
 <body>
+
+<!--<div class="loader">-->
+    <!--<div class="loader_inner"></div>-->
+<!--</div>&lt;!&ndash;loader&ndash;&gt;-->
+
 
 <header class="box-mainHeader">
     <div class="box-header-wrapper">
@@ -59,7 +67,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 col-xs-6" >
+                <div class="col-md-4 col-xs-6">
                     <div class="box-mainHeader__tools">
                         <div class="price_wrap">
                             <div class="price">
@@ -95,9 +103,9 @@
                 </div>
 
                 <picture>
-                    <source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide1.png">
+                    <!--<source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide1.png">-->
                     <source media="(min-width: 1200px)" srcset="img/Slider1/lg_slaide1.png">
-                    <source media="(min-width: 587px)" srcset="img/Slider1/base_slaide1.png">
+                    <source media="(min-width: 583px)" srcset="img/Slider1/base_slaide1.png">
                     <!--<source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide1.png">-->
                     <!--<source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide1.png">-->
                     <source media="(min-width: 300px)" srcset="img/Slider1/xs_slaide1.png">
@@ -111,9 +119,9 @@
                     <a class="slide-button correctPosition2" href="#">See Details</a></div>
 
                 <picture>
-                    <source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide2.png">
+                    <!--<source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide2.png">-->
                     <source media="(min-width: 1200px)" srcset="img/Slider1/lg_slaide2.png">
-                    <source media="(min-width: 587px)" srcset="img/Slider1/base_slaide2.png">
+                    <source media="(min-width: 583px)" srcset="img/Slider1/base_slaide2.png">
                     <!--<source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide2.png">-->
                     <!--<source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide2.png">-->
                     <source media="(min-width: 300px)" srcset="img/Slider1/xs_slaide2.png">
@@ -128,11 +136,11 @@
                     <div class="col-xs-12">
                         <h2 class="titleSlowboards">snowboards</h2>
                         <div class="sliderSnowboards">
-                            <div class="snowboardItem"><img src="img/Shop/boards/board1.png" alt="snowboard"></div>
-                            <div class="snowboardItem"><img src="img/Shop/boards/board2.png" alt="snowboard"></div>
-                            <div class="snowboardItem"><img src="img/Shop/boards/board3.png" alt="snowboard"></div>
-                            <div class="snowboardItem"><img src="img/Shop/boards/board4.png" alt="snowboard"></div>
-                            <div class="snowboardItem"><img src="img/Shop/boards/board5.png" alt="snowboard"></div>
+                            <div class="snowboardItem"><a href="#"><img src="img/Shop/boards/board1.png" alt="snowboard"></a></div>
+                            <div class="snowboardItem"><a href="#"><img src="img/Shop/boards/board2.png" alt="snowboard"></a></div>
+                            <div class="snowboardItem"><a href="#"><img src="img/Shop/boards/board3.png" alt="snowboard"></a></div>
+                            <div class="snowboardItem"><a href="#"><img src="img/Shop/boards/board4.png" alt="snowboard"></a></div>
+                            <div class="snowboardItem"><a href="#"><img src="img/Shop/boards/board5.png" alt="snowboard"></a></div>
                         </div>
                         <div class="snowboards-text_footer">
                             <p>Snowboard extreme Series</p>
@@ -147,7 +155,7 @@
             <img class="wrappenBoardman firstBoardMan" src="img/company/big_boardMan.png" alt="boardMan">
             <img class="wrappenBoardman secondBoardMan" src="img/company/min_boardMan.png" alt="boardMan">
 
-            <div class="container">
+            <div class="aboutCompany_container">
                 <div class="row">
                     <div class="col-xs-12  col-md-6">
                         <div class="company-text">
@@ -174,7 +182,8 @@
 
                 <div class="gallery_library">
                     <div class="wrap_inset_library">
-                        <div class="item"><a data-fancybox="group" data-caption="Photo #1" href="img/Gallery/im1.jpg">
+                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group" data-caption="Photo #1"
+                                             href="img/Gallery/big/im1.jpg">
                             <img class="library_img"
                                  src="img/Gallery/im1.jpg"
                                  alt="img"/></a></div>
@@ -182,7 +191,8 @@
                     </div>
 
                     <div class="wrap_inset_library">
-                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group" data-caption="Photo #2" href="img/Gallery/im2.jpg">
+                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group"
+                                             data-caption="Photo #2" href="img/Gallery/big/im2.jpg">
                             <img class="library_img"
                                  src="img/Gallery/im2.jpg"
                                  alt="img"/></a></div>
@@ -190,16 +200,18 @@
                     </div>
 
                     <div class="wrap_inset_library">
-                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group" data-caption="Photo #3"
-                                             href="img/Gallery/im3.jpg"><img class="library_img"
-                                                                             src="img/Gallery/im3.jpg"
-                                                                             alt="img"/></a></div>
+                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group"
+                                             data-caption="Photo #3"
+                                             href="img/Gallery/big/im3.jpg"><img class="library_img"
+                                                                                 src="img/Gallery/im3.jpg"
+                                                                                 alt="img"/></a></div>
                         <p class="libraryItem_text">Burton’s Tokyo Rail Days Recap</p>
 
                     </div>
 
                     <div class="wrap_inset_library">
-                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group" data-caption="Photo #4" href="img/Gallery/im4.jpg">
+                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group"
+                                             data-caption="Photo #4" href="img/Gallery/big/im4.jpg">
                             <img class="library_img"
                                  src="img/Gallery/im4.jpg"
                                  alt="img"/></a></div>
@@ -207,7 +219,8 @@
                     </div>
 
                     <div class="wrap_inset_library">
-                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group" data-caption="Photo #5" href="img/Gallery/im5.jpg">
+                        <div class="item"><a class="fancyImg fancybox.image" data-fancybox="group"
+                                             data-caption="Photo #5" href="img/Gallery/big/im5.jpg">
                             <img class="library_img"
                                  src="img/Gallery/im5.jpg"
                                  alt="img"/></a></div>
@@ -274,19 +287,20 @@
 
 <footer>
     <div class="box-footer-wrappen">
-    <div class="footer-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="copyright-box">&copy; 2014 Mountains Snowboards</div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="change-box">
-                        <a class="change-box__flag" href="#"></a>
-                        <a class="change-box__language" href="#">Change Region</a>
+        <div class="footer-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="copyright-box">&copy; 2014 Mountains Snowboards</div>
                     </div>
-                </div>
+                    <div class="col-xs-6">
+                        <div class="change-box">
+                            <a class="change-box__flag" href="#"></a>
+                            <a class="change-box__language" href="#">Change Region</a>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>
@@ -299,7 +313,7 @@
 <script src="libs/placeholder_ie/jquery.placeholder.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/js/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/js/jquery.fancybox.min.js"></script>
 <!--<script src="libs/fancybox/jquery.fancybox.min.js"></script>-->
 
 <script src="scripts/scripts.js"></script>
