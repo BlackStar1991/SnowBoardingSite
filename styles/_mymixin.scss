@@ -1,0 +1,167 @@
+// generic transform
+@mixin transform($transforms) {
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin transform-style($val) {
+  -webkit-transform-style: $val;
+  -moz-transform-style: $val;
+  -ms-transform-style: $val;
+  transform-style: $val;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// rotateX
+@mixin rotateX($deg) {
+  @include transform(rotateX(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($origin) {
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin b-r($tl : 4px, $tr : 4px, $br: 4px, $bl: 4px) {
+  -webkit-border-radius: $tl $tr $br $bl;
+  -moz-border-radius: $tl $tr $br $bl;
+  -o-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+@mixin rot($deg, $x, $y) {
+  transform: rotate($deg+deg);
+  transform-origin: $x, $y;
+}
+
+@mixin gradient($top, $bottom, $direction: false) {
+
+  @if $direction {
+    background: $direction; /* Old browsers */
+    background: -moz-linear-gradient($direction, $top 0%, $bottom 100%);
+    background: -webkit-linear-gradient($direction, $top 0%, $bottom 100%);
+    background: -o-linear-gradient($direction, $top 0%, $bottom 100%);
+    background: -ms-linear-gradient($direction, $top 0%, $bottom 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0); /* IE6-9 */
+  } @else {
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top, $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $top 0%, $bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $top 0%, $bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $top 0%, $bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $top 0%, $bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0); /* IE6-9 */
+  }
+
+}
+
+@mixin box-shadow($left, $top, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $left $top $blur $color;
+    -moz-box-shadow: inset $left $top $blur $color;
+    box-shadow: inset $left $top $blur $color;
+  } @else {
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
+  }
+}
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+@mixin transition-property($property...) {
+  -moz-transition-property:    $property;
+  -o-transition-property:      $property;
+  -webkit-transition-property: $property;
+  transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+  -moz-transition-property:    $duration;
+  -o-transition-property:      $duration;
+  -webkit-transition-property: $duration;
+  transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function:    $timing;
+  -o-transition-timing-function:      $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+  -moz-transition-delay:    $delay;
+  -o-transition-delay:      $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay:         $delay;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+@mixin grayscale($value) {
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
+}
+
+///////////////// PLASEHOLDER
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+// user-select ЗАПРЕЩАЕТ ВЫДЕЛЕНИЯ ТЕКСТА
+@mixin user-select-none ($value: none) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
