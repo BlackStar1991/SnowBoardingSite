@@ -34,16 +34,18 @@
 <body>
 
 <header class="box-mainHeader">
-    <div class="box-bgPicture__header">
+    <div class="box-header-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="col-md-8 col-xs-6" style="border: 1px solid #f00;">
                     <div class="box-mainHeader__navigation">
                         <div class="box-logo"><a href="#">
                             <img src="img/LogoSite.png" alt="logoSite">
                         </a></div>
                         <nav class="box-navigation">
                             <i class="fa fa-bars navigation-button visible-xs visible-sm" aria-hidden="true"></i>
+
+                            <!--  visible-xs visible-sm  -->
 
                             <ul class="box-navigation__items">
                                 <li class="item"><a href="#">Shop </a></li>
@@ -57,14 +59,18 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-xs-6" style="border: 1px solid #f00;">
                     <div class="box-mainHeader__tools">
                         <div class="price_wrap">
                             <div class="price">
                                 <a href="#">&#128;<span>0</span></a>
                             </div>
                         </div>
-                        <i class="fa fa-search search-button visible-xs visible-sm" aria-hidden="true"></i>
+                        <i class="fa fa-search search-button   visible-xs visible-sm" aria-hidden="true"></i>
+
+                        <!--  visible-xs visible-sm  -->
+
+
                         <form class="search_form">
                             <input type="search" name="searchItem"/>
                             <button class="search_form__button" type="submit">
@@ -91,10 +97,10 @@
                 <picture>
                     <source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide1.png">
                     <source media="(min-width: 1200px)" srcset="img/Slider1/lg_slaide1.png">
-                    <source media="(min-width: 768px)" srcset="img/Slider1/base_slaide1.png">
-                    <source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide1.png">
-                    <source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide1.png">
-                    <source media="(min-width: 220px)" srcset="img/Slider1/xs_slaide1.png">
+                    <source media="(min-width: 388px)" srcset="img/Slider1/base_slaide1.png">
+                    <!--<source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide1.png">-->
+                    <!--<source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide1.png">-->
+                    <source media="(min-width: 300px)" srcset="img/Slider1/xs_slaide1.png">
                     <img src="img/Slider1/base_slaide1.png" alt="Snowborder">
                 </picture>
 
@@ -107,10 +113,10 @@
                 <picture>
                     <source media="(min-width: 1800px)" srcset="img/Slider1/lg_slaide2.png">
                     <source media="(min-width: 1200px)" srcset="img/Slider1/lg_slaide2.png">
-                    <source media="(min-width: 768px)" srcset="img/Slider1/base_slaide2.png">
-                    <source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide2.png">
-                    <source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide2.png">
-                    <source media="(min-width: 220px)" srcset="img/Slider1/xs_slaide2.png">
+                    <source media="(min-width: 388px)" srcset="img/Slider1/base_slaide2.png">
+                    <!--<source media="(min-width: 560px)" srcset="img/Slider1/md2_slaide2.png">-->
+                    <!--<source media="(min-width: 320px)" srcset="img/Slider1/xs_slaide2.png">-->
+                    <source media="(min-width: 300px)" srcset="img/Slider1/xs_slaide2.png">
                     <img src="img/Slider1/base_slaide2.png" alt="Snowborder">
                 </picture>
 
@@ -267,6 +273,7 @@
 </div>
 
 <footer>
+    <div class="box-footer-wrappen">
     <div class="footer-box">
         <div class="container">
             <div class="row">
@@ -282,6 +289,7 @@
 
             </div>
         </div>
+    </div>
 </footer>
 
 
