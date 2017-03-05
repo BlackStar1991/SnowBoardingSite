@@ -95,7 +95,7 @@
     }
 
 
-    header .box-navigation .navigation-button{  //// кнопкапоявляется
+    header .box-navigation .navigation-button{  //// showButton
 
     }
 
@@ -106,7 +106,6 @@
 
     }
 
-
     header .box-navigation__items .item{
 
         float: none;
@@ -116,7 +115,6 @@
 
     }
 
-    
     header .box-navigation__items .item a{
         display: inline-block;
         width: 100%;
@@ -208,14 +206,6 @@
     }
 
 
-    header .box-navigation__items .item{
-        /*float: none;*/
-        /*text-align: center;*/
-        /*height: 40px;*/
-        /*width: 100%;*/
-        /*padding: 6px 20px;*/
-
-    }
     header .box-navigation__items .item a{
 
     }
@@ -257,17 +247,8 @@
     }
 
 
-
-
 }
 
-@media only screen and (max-width: 666px) {
-    /*header .box-navigation .navigation-button{*/
-        /*top: -62px;*/
-        /*left: 106px;*/
-        /*z-index:100;*/
-    /*}*/
-}
 
 @media only screen and (max-width: 650px) {
 
@@ -328,11 +309,6 @@
 
 @media only screen and (max-width: 560px) {
 
-    /*header .search_form input {*/
-
-        /*margin-left: 1vw;*/
-    /*}*/
-
 
     main .company-text{
         margin-left: 15px;
@@ -355,7 +331,6 @@
         max-width: 250px;
         line-height: 1;
     }
-
 
 
 

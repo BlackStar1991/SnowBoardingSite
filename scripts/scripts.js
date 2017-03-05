@@ -1,16 +1,13 @@
- window.onload=function () {
+window.onload = function () {
 
 
 // $(document).ready(function() {
 
 
-
-
-    $(window).ready(function() {
+    $(window).ready(function () {
         $(".loader_inner").fadeOut(800);
         $(".loader").delay(700).fadeOut(800);
     });
-
 
 
     var searchButton = $(".search-button");
@@ -34,13 +31,13 @@
     searchButton.click(function () {
 
         if (searchBlock.is(':visible')) {
-            searchBlock.slideUp();
+            searchBlock.hide('slide',{direction:"right"},700);
+
         } else {
-            searchBlock.slideDown();
+            searchBlock.show('slide',{direction:"left"},700);
+
         }
     });
-
-
 
 
     /////////////////// FIRST SLIDER
@@ -75,7 +72,6 @@
             }
         ]
     });
-
 
 
     ///////// Slider SNOWBOARDS
@@ -118,7 +114,7 @@
     });
 
 
-    $(window).load(function () {
+    $(window).on("load", function () {
         $('.wrappenBoardman').liCover({
             parent: $('.box-aboutCompany'),
             position: 'absolute',
@@ -128,37 +124,37 @@
     });
 
 
+    var fancyImg = $(".fancyImg");
+
+    fancyImg.on("click", FancyBoxBlur());
+
+    function FancyBoxBlur() {
 
 
-        $(".libraryItem_text").on("click", function () {
-            alert("click");
+        fancyImg.fancybox({
+            // closeClick: true,
+            // scrolling: true,
+            // arrows:true,
 
+            beforeShow: function () {
+                $("body *:not(.fancybox-overlay, .fancybox-overlay *)").addClass("blur");
+            },
+            afterClose: function () {
+                $("body *:not(.fancybox-overlay, .fancybox-overlay *)").removeClass("blur");
+            },
+            helpers : {
+                overlay: {
+                    css: {'background': 'rgba(255,255,255,0.1)'}
+                }
+            }
         });
 
+    }
 
-
-
-    // $(".fancyImg").fancybox({
-    //     helpers: {
-    //         overlay: false
-    //     },
-    //     afterShow: function() {
-    //         $('.box-gallery').css({
-    //             webkitFilter: 'blur(3px)',
-    //             filter: 'blur(3px)'
-    //         })
-    //     },
-    //     afterClose: function() {
-    //         $('.box-gallery').css({
-    //             webkitFilter: 'blur(0)',
-    //             filter: 'blur(0)'
-    //         })
-    //     }
-    // });
 
     // $(".fancybox").fancybox({
     //     beforeShow: function () {
-    //         $("body *:not(.fancybox-overlay, .fancybox-overlay *)").addClass("blur");
+    //         $("body *:not(.fancybox-overlay, .fancybox-overlay *))."addClass("blur");
     //     },
     //     afterClose: function () {
     //         $("body *:not(.fancybox-overlay, .fancybox-overlay *)").removeClass("blur");
@@ -169,10 +165,6 @@
     //         }
     //     }
     // });
-
-
-
-
 
 
 };

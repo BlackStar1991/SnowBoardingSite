@@ -25,29 +25,13 @@
   url("../fonts/ProximaNovaExtraBold/ProximaNovaExtraBold.ttf") format("truetype"),
   url("../fonts/ProximaNovaExtraBold/ProximaNovaExtraBold.svg#ProximaNovaExtraBold") format('svg');
 }
-@font-face {
-  font-family: "HelveticaRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
-  src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
-  url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MyriadProRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "Kalam-Bold";
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/Kalam-Bold/Kalam-Bold.eot");
-  src: url("../fonts/Kalam-Bold/Kalam-Bold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  src: url("../fonts/Kalam-Bold/Kalam-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Kalam-Bold/Kalam-Bold.woff") format("woff"),
   url("../fonts/Kalam-Bold/Kalam-Bold.ttf") format("truetype");
+}
