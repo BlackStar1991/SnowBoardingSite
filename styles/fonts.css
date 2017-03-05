@@ -44,7 +44,10 @@
   url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway";
+  font-family: "Kalam-Bold";
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype"); }
+  font-weight: normal;
+  src: url("../fonts/Kalam-Bold/Kalam-Bold.eot");
+  src: url("../fonts/Kalam-Bold/Kalam-Bold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/Kalam-Bold/Kalam-Bold.ttf") format("truetype");

@@ -1,6 +1,13 @@
 @import "mymixin";
 @import "fonts.css";
 
+
+
+
+
+
+
+
 /*
 ================================================================================
 |                                     reset                                     |
@@ -145,11 +152,11 @@ $colorbgbotton: #c7c7c7;
   z-index: 9999; }
 
 .loader_inner {
-  background: url(../img/loader.gif) no-repeat center center;
-  height: 128px;
-  width: 128px;
-  margin-top: -64px;
-  margin-left: -64px;
+  background: url(../img/snowboarder.svg) no-repeat center center;
+  height: 256px;
+  width: 256px;
+  margin-top: -128px;
+  margin-left: -128px;
   left: 50%;
   top: 50%;
   position: absolute;
@@ -259,6 +266,11 @@ header {
         border-bottom: 1px transparent solid;
         &:hover {
           color: $colorA;
+        }
+        &:focus{
+          color: #57d0ff;
+          font-weight: 900;
+          text-decoration: none;
         }
       }
     }
@@ -429,7 +441,7 @@ main {
 
     &.correctPosition1 {
       top: 28.8%;
-      left: 7.3%; /////// NE RABOT
+      left: 7.3%; ///////
     }
 
     &.color-black {
@@ -452,10 +464,7 @@ main {
       bottom: 28%;
       left: 13.5%;
     }
-    //&.correctPosition1{
-    //  bottom: 26.6%;
-    //  left: 3%;
-    //}
+
 
   }
 
@@ -491,37 +500,18 @@ main {
     position: relative;
     width: 100%;
     max-height: 100%;
+
   }
 
   .snowboardItem {
     outline: none;
+
     a{
       outline: none;
     }
   }
 
-  .slick-active {
-    opacity: .5;
-  }
 
-  .slick-slide {
-    text-align: center;
-  }
-  .slick-slide img {
-    margin: 0 auto; // IMPORTANT
-  }
-
-  .slick-current {
-    opacity: 1;
-  }
-
-  .blur {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-  }
 
   .titleSlowboards {
     margin-bottom: 80px;
@@ -540,19 +530,27 @@ main {
     text-transform: uppercase;
   }
 
-  .slick-prev {
+  .slick-prev{
+    display: block;
     top: 50%;
     left: -10%;
     height: 227px;
     width: 123px;
     background: url("../img/arr.png") no-repeat 0 0;
-    z-index: 1;
-    &:hover {
+    z-index: 2;
+    &:hover{
+
+      top: 50%;
+      left: -10%;
       height: 227px;
       width: 123px;
       background: url("../img/arr.png") no-repeat 0 -246px;
-      z-index: 1;
+
     }
+    &:focus{
+      background: url("../img/arr.png") no-repeat 0 0;
+    }
+
   }
   .slick-next {
     right: -10%;
@@ -561,12 +559,32 @@ main {
     width: 123px;
     background: url("../img/arr.png") no-repeat -144px 0;
     z-index: 1;
-    &:hover {
+    &:hover{
+      right: -10%;
+      top: 50%;
       height: 227px;
       width: 123px;
       background: url("../img/arr.png") no-repeat  -144px -246px;
       z-index: 1;
     }
+    &:focus{
+      background: url("../img/arr.png") no-repeat -144px 0;
+    }
+  }
+
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-slide {
+    text-align: center;
+  }
+  .slick-slide img {
+    margin: 0 auto; // IMPORTANT
+  }
+
+  .slick-current {
+    opacity: 1;
   }
 
   ///////////////////

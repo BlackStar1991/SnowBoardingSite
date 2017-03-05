@@ -1,13 +1,15 @@
-window.onload=function () {
-
+ window.onload=function () {
 
 
 // $(document).ready(function() {
 
-    // $(window).load(function() {
-    //     $(".loader_inner").fadeOut();
-    //     $(".loader").delay(400).fadeOut("slow");
-    // });
+
+
+
+    $(window).ready(function() {
+        $(".loader_inner").fadeOut(800);
+        $(".loader").delay(700).fadeOut(800);
+    });
 
 
 
@@ -126,37 +128,34 @@ window.onload=function () {
     });
 
 
-    function fff() {
-        if('fancybox' in jQuery){
-            alert("HAVE");
-        }else{
-            alert("Don't have");
-        }
-    }fff();
 
-    $(".fancyImg").click(function () {
-       alert("click");
-    });
 
-    $(document).ready(function() {
-        $("a.fancyImg").fancybox({
-            helpers: {
-                overlay: false
-            },
-            afterShow: function () {
-                $('.box-gallery__container').css({
-                    webkitFilter: 'blur(13px)',
-                    filter: 'blur(13px)'
-                })
-            },
-            afterClose: function () {
-                $('.box-gallery__container').css({
-                    webkitFilter: 'blur(0)',
-                    filter: 'blur(0)'
-                })
-            }
+        $(".libraryItem_text").on("click", function () {
+            alert("click");
+
         });
-    });
+
+
+
+
+    // $(".fancyImg").fancybox({
+    //     helpers: {
+    //         overlay: false
+    //     },
+    //     afterShow: function() {
+    //         $('.box-gallery').css({
+    //             webkitFilter: 'blur(3px)',
+    //             filter: 'blur(3px)'
+    //         })
+    //     },
+    //     afterClose: function() {
+    //         $('.box-gallery').css({
+    //             webkitFilter: 'blur(0)',
+    //             filter: 'blur(0)'
+    //         })
+    //     }
+    // });
+
     // $(".fancybox").fancybox({
     //     beforeShow: function () {
     //         $("body *:not(.fancybox-overlay, .fancybox-overlay *)").addClass("blur");
